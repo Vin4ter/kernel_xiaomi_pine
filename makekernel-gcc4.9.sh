@@ -33,5 +33,5 @@ echo "Compiling kernel"
 export CROSS_COMPILE=${PWD}/gcc-linaro-4.9-2016.02-x86_64_aarch64_be-linux-gnu/bin/aarch64_be-linux-gnu-
 make O=out REAL_CC=${PWD}/gcc-linaro-4.9-2016.02-x86_64_aarch64_be-linux-gnu/bin/aarch64_be-linux-gnu-gcc pine-perf_defconfig
 #make menuconfig O=out REAL_CC=/home/alex/gcc-linaro-4.9-2016.02-x86_64_aarch64_be-linux-gnu/bin/aarch64_be-linux-gnu- pine-perf_defconfig
-make -j2 O=out REAL_CC=${PWD}/gcc-linaro-4.9-2016.02-x86_64_aarch64_be-linux-gnu/bin/aarch64_be-linux-gnu-gcc 2>&1 | tee kernel.log
+make -j(nrpoc) O=out REAL_CC=${PWD}/gcc-linaro-4.9-2016.02-x86_64_aarch64_be-linux-gnu/bin/aarch64_be-linux-gnu-gcc 2>&1 | tee kernel.log
 echo "Build end! ->>"
