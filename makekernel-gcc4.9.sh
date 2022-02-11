@@ -13,7 +13,7 @@ echo "Download toolchain gcc-linaro-4.9"
 wget https://releases.linaro.org/components/toolchain/binaries/4.9-2016.02/aarch64_be-linux-gnu/gcc-linaro-4.9-2016.02-x86_64_aarch64_be-linux-gnu.tar.xz
 fi
 
-sudo rm -rf linaro4.9-2016-aarch64_be_linux
+sudo rm -rf gcc-linaro-4.9-2016.02-x86_64_aarch64_be-linux-gnu
 sudo apt-get install xz-utils
 clear
 echo "Unpack: toolchain gcc-linaro-4.9"
