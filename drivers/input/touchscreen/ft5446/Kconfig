@@ -5,7 +5,7 @@
 menuconfig TOUCHSCREEN_FT5446
 		bool "Focaltech Touchscreen"
 		depends on I2C
-		default n
+		default y
 		help
 		  Say Y here if you have Focaltech touch panel.
 		  If unsure, say N.
